@@ -12,7 +12,7 @@ consumes:
 paths:
   /denuncia/listar:
     get:
-      summary: Your GET endpoint
+      summary: Listar denuncias
       tags: []
       responses:
         '200':
@@ -864,5 +864,92 @@ paths:
       operationId: get-denuncia-listar
       description: ''
       parameters: []
+  '/denuncia/{idAnexo}/anexos':
+    get:
+      summary: Ver anexos
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties: {}
+          examples:
+            example-1:
+              - id: 28221
+                nombre: CROQUIS.pdf
+                descripcion: null
+                path: mesa-partes/anexo/6234f083-4152-458a-994d-56e6125e29f0.pdf
+                pagina: 1
+        '':
+          examples:
+            example-1:
+              - id: 28221
+                nombre: CROQUIS.pdf
+                descripcion: null
+                path: mesa-partes/anexo/6234f083-4152-458a-994d-56e6125e29f0.pdf
+                pagina: 1
+      operationId: get-denuncia-13405-anexos
+      description: ''
+      parameters: []
+    parameters:
+      - type: integer
+        name: idAnexo
+        in: path
+        required: true
+        minimum: 0
+      - type: string
+        name: ''
+        in: path
+        required: true
+  '/denuncia/{idCaso}/nuevo-caso':
+    parameters:
+      - type: number
+        name: idCaso
+        in: path
+        required: true
+    put:
+      summary: ''
+      operationId: put-denuncia-nuevo-caso-idCaso
+      responses:
+        '200':
+          description: OK
+          examples:
+            example-1:
+              message: Se creó el Caso
+              code: 200
+              id: 13391
+              data: null
+        '':
+          examples:
+            example-1:
+              message: Se creó el Caso
+              code: 200
+              id: 13391
+              data: null
+          description: ''
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              anyoCaso:
+                type: string
+              fiscalia:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  nombre:
+                    type: string
+              numeroCaso:
+                type: string
+          x-examples: {}
+        - type: string
+          in: header
+          name: Content-Type
+          description: application/json
+          required: true
 definitions: {}
 basePath: /back-mesa-parte/resources
