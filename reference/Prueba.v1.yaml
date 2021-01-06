@@ -898,10 +898,6 @@ paths:
         in: path
         required: true
         minimum: 0
-      - type: string
-        name: ''
-        in: path
-        required: true
   '/denuncia/{idCaso}/nuevo-caso':
     parameters:
       - type: number
@@ -909,7 +905,7 @@ paths:
         in: path
         required: true
     put:
-      summary: ''
+      summary: Registrar caso
       operationId: put-denuncia-nuevo-caso-idCaso
       responses:
         '200':
@@ -949,7 +945,77 @@ paths:
         - type: string
           in: header
           name: Content-Type
-          description: application/json
+          required: true
+  '/denuncia/{idCaso}/iniciar':
+    put:
+      summary: Responder denuncia
+      operationId: put-denuncia-13391-iniciar
+      responses:
+        '200':
+          description: OK
+          examples:
+            example-1:
+              message: 'Se Aperturo Investigacion '
+              code: 200
+              id: 13391
+              data: null
+        '':
+          examples:
+            example-1:
+              message: 'Se Aperturo Investigacion '
+              code: 200
+              id: 13391
+              data: null
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              descripcion:
+                type: string
+              delitos:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    nombre:
+                      type: string
+          x-examples: {}
+        - type: string
+          in: header
+          name: Content-Type
+          required: true
+    parameters:
+      - type: number
+        name: idCaso
+        in: path
+        required: true
+        minimum: 0
+  '/denuncia/{idCaso}/documento-fiscal/documento.pdf':
+    parameters:
+      - type: number
+        name: idCaso
+        in: path
+        required: true
+    post:
+      summary: Responder denuncia (imagen)
+      operationId: post-denuncia-idCaso-documento-fiscal-documento.pdf
+      responses:
+        '200':
+          description: OK
+          examples:
+            example-1:
+              message: Se subio correctamente el archivo
+              code: 200
+              id: 28225
+              data: null
+      parameters:
+        - in: formData
+          type: string
+          name: file
           required: true
 definitions: {}
 basePath: /back-mesa-parte/resources
