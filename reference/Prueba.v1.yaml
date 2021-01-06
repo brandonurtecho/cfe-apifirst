@@ -1014,8 +1014,11 @@ paths:
               data: null
       parameters:
         - in: formData
-          type: string
+          type: file
           name: file
           required: true
+        - type: string
+          in: header
+          name: Content-Type
 definitions: {}
 basePath: /back-mesa-parte/resources
