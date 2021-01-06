@@ -1,0 +1,868 @@
+swagger: '2.0'
+info:
+  title: prueba
+  version: '1.0'
+host: '190.187.95.227:8083'
+schemes:
+  - http
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /denuncia/listar:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties: {}
+          examples:
+            example-1:
+              pages: 780
+              perPage: 10
+              total: 7792
+              data:
+                - id: 9013
+                  codigoDenuncia: null
+                  codigoCaso: ''
+                  delitoReferencial: null
+                  delitosFiscalia: ''
+                  ubigeo: null
+                  direccion: null
+                  estado: Nuevo
+                  telefonoDenunciante: '999999998'
+                  correoDenunciante: cindypco@gmail.com
+                  distritoFiscal: null
+                  codigoFiscalia: null
+                  fiscalia: null
+                  codigoDespacho: null
+                  despacho: null
+                  esDerivado: false
+                  fechaOcurrencia: null
+                  fechaDenuncia: null
+                  fechaIngreso: null
+                  denunciado: null
+                  agraviado: null
+                  denunciante: null
+                  hecho: null
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: null
+                  cargoFiscal: ''
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: cindypco@gmail.com
+                    documento: '40448484'
+                    nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                    telefono: '999999998'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2020-11-11 14:38'
+                  nombreUsuarioModificacion: PATRICIA MILAGROS ALIAGA BRAVO
+                  tipoRiesgo: null
+                - id: 13405
+                  codigoDenuncia: DEN-202100003
+                  codigoCaso: ''
+                  delitoReferencial: Delitos Informáticos
+                  delitosFiscalia: ''
+                  ubigeo: '150101'
+                  direccion: AV.ABANCAY CRDA 5
+                  estado: Nuevo
+                  telefonoDenunciante: '930496016'
+                  correoDenunciante: dqf1962@hotmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA
+                  codigoFiscalia: '506010117'
+                  fiscalia: 17º FISCALÍA PROVINCIAL PENAL DE LIMA
+                  codigoDespacho: '111'
+                  despacho: 'DESPACHO 1 '
+                  esDerivado: false
+                  fechaOcurrencia: '2021-01-03 10:00'
+                  fechaDenuncia: '2021-01-06 07:17'
+                  fechaIngreso: '2021-01-06 07:17'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: DARIO QUINTANA FERNANDEZ
+                      idTipoDocumento: null
+                      documento: '08407454'
+                      tipoDocumento: DNI
+                      telefono: '930496016'
+                      correo: dqf1962@hotmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: DARIO QUINTANA FERNANDEZ
+                      idTipoDocumento: null
+                      documento: '08407454'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: DELITO INFORMATICO
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ADJUNTARE MA PRUEBAS EN OTRO ESCRITO
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos:
+                    - mesa-partes/anexo/6234f083-4152-458a-994d-56e6125e29f0.pdf
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202100003_fddd4e41-b5dc-4e58-950e-0df7dc1803c9.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202100003_43b07093-2981-437b-914b-7b5e9eeb2de9.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: dqf1962@hotmail.com
+                    documento: '08407454'
+                    nombreCompleto: DARIO QUINTANA FERNANDEZ
+                    telefono: '930496016'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2021-01-06 07:17'
+                  nombreUsuarioModificacion: DARIO QUINTANA FERNANDEZ
+                  tipoRiesgo: null
+                - id: 13394
+                  codigoDenuncia: DEN-202100002
+                  codigoCaso: 506110102-2021-454564-0
+                  delitoReferencial: Delitos Informáticos
+                  delitosFiscalia: ''
+                  ubigeo: '150131'
+                  direccion: hkljlk
+                  estado: Caso Nuevo
+                  telefonoDenunciante: '987681691'
+                  correoDenunciante: renatovargas23@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA
+                  codigoFiscalia: '506110102'
+                  fiscalia: 2º FISCALÍA PROVINCIAL PENAL DE SAN ISIDRO
+                  codigoDespacho: '75'
+                  despacho: DESPACHO 1 - SAN ISIDRO 2
+                  esDerivado: false
+                  fechaOcurrencia: '2020-05-15 12:00'
+                  fechaDenuncia: '2021-01-05 10:45'
+                  fechaIngreso: '2021-01-05 10:45'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: RENATO MARTIN VARGAS ALFARO
+                      idTipoDocumento: null
+                      documento: '72937264'
+                      tipoDocumento: DNI
+                      telefono: '987681691'
+                      correo: renatovargas23@gmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: RENATO MARTIN VARGAS ALFARO
+                      idTipoDocumento: null
+                      documento: '72937264'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: kjljl
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202100002_0c84cd8b-125e-41b7-a3b1-90e7eabdfe0e.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202100002_e025b0bc-f3e0-48ab-b702-bb9c79c5f880.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: renatovargas23@gmail.com
+                    documento: '72937264'
+                    nombreCompleto: RENATO MARTIN VARGAS ALFARO
+                    telefono: '987681691'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2021-01-06 08:48'
+                  nombreUsuarioModificacion: RENATO MARTIN VARGAS ALFARO
+                  tipoRiesgo: null
+                - id: 13393
+                  codigoDenuncia: DEN-202000001
+                  codigoCaso: 4006034501-2021-12-0
+                  delitoReferencial: 'Robo '
+                  delitosFiscalia: ''
+                  ubigeo: '150102'
+                  direccion: ancon 689
+                  estado: Caso Nuevo
+                  telefonoDenunciante: '999999998'
+                  correoDenunciante: cindypco@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA NOROESTE
+                  codigoFiscalia: '4006034501'
+                  fiscalia: 1° FISCALIA PROVINCIAL PENAL CORPORATIVA DE SANTA ROSA
+                  codigoDespacho: '229'
+                  despacho: 2° DESPACHO
+                  esDerivado: false
+                  fechaOcurrencia: '2020-09-09 11:00'
+                  fechaDenuncia: '2021-01-04 16:50'
+                  fechaIngreso: '2021-01-04 16:50'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: '999999998'
+                      correo: cindypco@gmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: robo vehiculo
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202000001_1eb553d4-5542-4090-874f-3595bef16857.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202000001_eda308ad-d38e-43ce-b410-57a5c8a0ce1a.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: cindypco@gmail.com
+                    documento: '40448484'
+                    nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                    telefono: '999999998'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2021-01-06 07:23'
+                  nombreUsuarioModificacion: ANGEL ARTURO NUÑEZ BERROSPI
+                  tipoRiesgo: null
+                - id: 13391
+                  codigoDenuncia: DEN-202005911
+                  codigoCaso: ''
+                  delitoReferencial: 'Robo '
+                  delitosFiscalia: ''
+                  ubigeo: '150101'
+                  direccion: Av. abancay 315
+                  estado: Nuevo
+                  telefonoDenunciante: '987517381'
+                  correoDenunciante: anllelocarreazo@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA
+                  codigoFiscalia: '506010129'
+                  fiscalia: 29º FISCALÍA PROVINCIAL PENAL DE LIMA
+                  codigoDespacho: '120'
+                  despacho: 'DESPACHO 1 '
+                  esDerivado: false
+                  fechaOcurrencia: '2020-12-01 12:00'
+                  fechaDenuncia: '2020-12-30 17:36'
+                  fechaIngreso: '2020-12-30 17:36'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: JOSE ANTONIO LUIS
+                      idTipoDocumento: null
+                      documento: '40568458'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                    - idTipo: null
+                      nombreCompleto: MARICARMEN
+                      idTipoDocumento: null
+                      documento: '48787878'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: ANLLELO PAOLITO CARREAZO YRIZALES
+                      idTipoDocumento: null
+                      documento: '40568626'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: Me robaron mi celular por la av. abancay
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202005911_d81d6ed0-f5bb-46a5-8832-94a860b33c1e.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202005911_18589288-8624-4aaa-8d74-e6ff968c956f.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: anllelocarreazo@gmail.com
+                    documento: '40568626'
+                    nombreCompleto: ANLLELO PAOLITO CARREAZO YRIZALES
+                    telefono: '987517381'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2021-01-06 07:22'
+                  nombreUsuarioModificacion: ANGEL ARTURO NUÑEZ BERROSPI
+                  tipoRiesgo: null
+                - id: 13389
+                  codigoDenuncia: DEN-202005910
+                  codigoCaso: 4006014502-2020-78798-0
+                  delitoReferencial: 'Hurto '
+                  delitosFiscalia: ''
+                  ubigeo: '070106'
+                  direccion: corporativa de ventanilla
+                  estado: Caso Nuevo
+                  telefonoDenunciante: '945912551'
+                  correoDenunciante: emarindj@mpfn.gob.pe
+                  distritoFiscal: DISTRITO FISCAL DE LIMA NOROESTE
+                  codigoFiscalia: '4006014502'
+                  fiscalia: 2° FISCALIA PROVINCIAL PENAL CORPORATIVA DE VENTANILLA
+                  codigoDespacho: '207'
+                  despacho: 4° DESPACHO
+                  esDerivado: false
+                  fechaOcurrencia: '2020-12-24 00:01'
+                  fechaDenuncia: '2020-12-30 17:30'
+                  fechaIngreso: '2020-12-30 17:30'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: EDISON HAROLD MARIN MORAN
+                      idTipoDocumento: null
+                      documento: '25813076'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: EDISON HAROLD MARIN MORAN
+                      idTipoDocumento: null
+                      documento: '25813076'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: Hurto en domicilio
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: Ninguna
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202005910_16416908-efc4-4d8b-91e0-3aef03dc21eb.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202005910_a3d28662-3468-4eb5-b537-36138b3c5aed.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: emarindj@mpfn.gob.pe
+                    documento: '25813076'
+                    nombreCompleto: EDISON HAROLD MARIN MORAN
+                    telefono: '945912551'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2020-12-30 17:37'
+                  nombreUsuarioModificacion: ANGEL ARTURO NUÑEZ BERROSPI
+                  tipoRiesgo: null
+                - id: 13388
+                  codigoDenuncia: DEN-PNP-202003021
+                  codigoCaso: 506051301-2020-980-0
+                  delitoReferencial: Estafa
+                  delitosFiscalia: ''
+                  ubigeo: '150115'
+                  direccion: null
+                  estado: Caso Nuevo
+                  telefonoDenunciante: '947166578'
+                  correoDenunciante: joselintiburcio@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA
+                  codigoFiscalia: '506051301'
+                  fiscalia: 1° FISCALIA PROVINCIAL PENAL TRANSITORIA DE LA VICTORIA
+                  codigoDespacho: '68'
+                  despacho: DESPACHO 1 - LA VICTORIA 1
+                  esDerivado: false
+                  fechaOcurrencia: null
+                  fechaDenuncia: '2020-12-30 17:15'
+                  fechaIngreso: '2020-12-30 17:15'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: pedro
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: juan
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: null
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos:
+                    - mesa-partes/anexo/0cfdcedc-b8bd-40c5-b5b8-ea19e99a4ad2.pdf
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-PNP-202003021_8c7afdf4-7d3e-4994-81a4-25ab0dadeb8b.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-PNP-202003021_cce76944-6219-4045-bd62-1b200d6de371.pdf
+                  remitente:
+                    tipo: PNP
+                    correo: joselintiburcio@gmail.com
+                    documento: '70872268'
+                    nombreCompleto: JOSELIN TIBURCIO SALDAÑA
+                    telefono: '947166578'
+                    nombre: COMISARíA DE BREñA
+                  fecModificacion: '2020-12-30 17:20'
+                  nombreUsuarioModificacion: ANGEL ARTURO NUÑEZ BERROSPI
+                  tipoRiesgo: null
+                - id: 13387
+                  codigoDenuncia: DEN-202005909
+                  codigoCaso: ''
+                  delitoReferencial: 'Robo '
+                  delitosFiscalia: ''
+                  ubigeo: '070107'
+                  direccion: avenida mi peru
+                  estado: Nuevo
+                  telefonoDenunciante: '947166578'
+                  correoDenunciante: joselintiburcio@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA NOROESTE
+                  codigoFiscalia: '4006024500'
+                  fiscalia: 1 FISCALIA PROVINCIAL PENAL DE MI PERÚ
+                  codigoDespacho: '242'
+                  despacho: 4° DESPACHO - MI PERÚ
+                  esDerivado: false
+                  fechaOcurrencia: '2020-01-09 14:02'
+                  fechaDenuncia: '2020-12-30 17:06'
+                  fechaIngreso: '2020-12-30 17:06'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: JOSELIN TIBURCIO SALDAÑA
+                      idTipoDocumento: null
+                      documento: '70872268'
+                      tipoDocumento: DNI
+                      telefono: '947166534'
+                      correo: joselintiburcio@gmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                    - idTipo: null
+                      nombreCompleto: Juan Robles
+                      idTipoDocumento: null
+                      documento: '70872269'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: JOSELIN TIBURCIO SALDAÑA
+                      idTipoDocumento: null
+                      documento: '70872268'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: me robaron el celular
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202005909_35e6c824-b3a2-450c-acae-36e3a6034470.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202005909_381831aa-1f96-474d-85ce-150e89999119.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: joselintiburcio@gmail.com
+                    documento: '70872268'
+                    nombreCompleto: JOSELIN TIBURCIO SALDAÑA
+                    telefono: '947166578'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2020-12-30 17:06'
+                  nombreUsuarioModificacion: JOSELIN TIBURCIO SALDAÑA
+                  tipoRiesgo: null
+                - id: 13386
+                  codigoDenuncia: DEN-202005908
+                  codigoCaso: ''
+                  delitoReferencial: 'Robo '
+                  delitosFiscalia: ''
+                  ubigeo: '150125'
+                  direccion: puente piedra 245
+                  estado: Nuevo
+                  telefonoDenunciante: '999999998'
+                  correoDenunciante: cindypco@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA NOROESTE
+                  codigoFiscalia: '4006054502'
+                  fiscalia: 2° FISCALIA PROVINCIAL PENAL CORPORATIVA DE PUENTE PIEDRA
+                  codigoDespacho: '220'
+                  despacho: 1° DESPACHO
+                  esDerivado: false
+                  fechaOcurrencia: '2020-12-29 11:00'
+                  fechaDenuncia: '2020-12-30 16:06'
+                  fechaIngreso: '2020-12-30 16:06'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Jose Perez
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: '999999999'
+                      correo: cindypco@gmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                    - idTipo: null
+                      nombreCompleto: Juan Perez
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: robo de vehículo
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202005908_3d1be6e9-4984-4a1f-ab48-9bf9a954e920.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202005908_320fab9a-5633-49b2-8428-1301fc170f5c.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: cindypco@gmail.com
+                    documento: '40448484'
+                    nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                    telefono: '999999998'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2020-12-30 16:06'
+                  nombreUsuarioModificacion: PATRICIA MILAGROS ALIAGA BRAVO
+                  tipoRiesgo: null
+                - id: 13385
+                  codigoDenuncia: DEN-202005907
+                  codigoCaso: ''
+                  delitoReferencial: 'Robo '
+                  delitosFiscalia: ''
+                  ubigeo: '150130'
+                  direccion: sanborja sur 3932
+                  estado: Nuevo
+                  telefonoDenunciante: '999999998'
+                  correoDenunciante: cindypco@gmail.com
+                  distritoFiscal: DISTRITO FISCAL DE LIMA
+                  codigoFiscalia: '506090101'
+                  fiscalia: 1º FISCALÍA PROVINCIAL PENAL DE SAN BORJA
+                  codigoDespacho: '77'
+                  despacho: DESPACHO 1 - SAN BORJA 1
+                  esDerivado: false
+                  fechaOcurrencia: '2019-09-11 23:00'
+                  fechaDenuncia: '2020-12-30 15:41'
+                  fechaIngreso: '2020-12-30 15:41'
+                  denunciado:
+                    - idTipo: null
+                      nombreCompleto: Desconocido (Los que resulten responsables - LQRR)
+                      idTipoDocumento: null
+                      documento: null
+                      tipoDocumento: null
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  agraviado:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: '999999999'
+                      correo: cindypco@gmail.com
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  denunciante:
+                    - idTipo: null
+                      nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                      idTipoDocumento: null
+                      documento: '40448484'
+                      tipoDocumento: DNI
+                      telefono: null
+                      correo: null
+                      codigoInstitucion: null
+                      nombreInstitucion: null
+                      ubigeo: null
+                      direccion: null
+                      esEntidad: false
+                      tipoEntidad: null
+                  hecho: Robo de vehículo en avenida
+                  esAbogado: false
+                  codigoCal: ''
+                  observacion: ''
+                  descripcionRecepcion: ''
+                  documentoFiscal: []
+                  anexos: []
+                  apersonamientos: []
+                  representantes: []
+                  cargo: mesa-partes/cargo/DEN-202005907_9a809fa4-587a-46c9-aac9-dc679a135f6e.pdf
+                  cargoFiscal: mesa-partes/cargo/DEN-202005907_d6ef9aae-31b4-46fd-8826-14ee276de0a4.pdf
+                  remitente:
+                    tipo: CIUDADANO
+                    correo: cindypco@gmail.com
+                    documento: '40448484'
+                    nombreCompleto: PATRICIA MILAGROS ALIAGA BRAVO
+                    telefono: '999999998'
+                    nombre: PERSONA NATURAL
+                  fecModificacion: '2020-12-30 15:41'
+                  nombreUsuarioModificacion: PATRICIA MILAGROS ALIAGA BRAVO
+                  tipoRiesgo: null
+      operationId: get-denuncia-listar
+      description: ''
+      parameters: []
+definitions: {}
+basePath: /back-mesa-parte/resources
